@@ -1,0 +1,26 @@
+﻿{
+  "$schema": "http://json.schemastore.org/BizTalkServerApplicationSchema",
+  "BizTalkAssemblies": [
+    {
+      "Name": "appProjectHelloWorld2",
+      "Path": "C:\\Users\\obekpaa\\source\\repos\\appProjectHelloWorld2\\appProjectHelloWorld2\\bin\\Debug\\appProjectHelloWorld2.dll"
+    }
+  ],
+  "BindingsFiles": [
+    {
+      "Name": "Binding",
+      "Path": "C:\\Users\\obekpaa\\source\\repos\\appProjectHelloWorld2\\appProjectHelloWorld-Build\\Binding.xml"
+    }
+  ],
+  "Assemblies": [
+  ],
+  "PreProcessingScripts": [
+  ],
+  "PostProcessingScripts": [
+  ],
+  "Files": [
+  ],
+  "DeploymentSequence": [
+    "appProjectHelloWorld2", "Binding"
+  ]
+}

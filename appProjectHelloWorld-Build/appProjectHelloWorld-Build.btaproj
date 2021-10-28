@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <CustomProjectExtensionsPath>$(MSBuildExtensionsPath)\Microsoft\BizTalk\BuildSystem\</CustomProjectExtensionsPath>
+    <ProjectGuid>8409a366-e222-4da8-840f-2d08ed9a0f43</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(CustomProjectExtensionsPath)CustomProject.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'" Label="Configuration">
+    <ApplicationName>VSTSAutobuild</ApplicationName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'" Label="Configuration">
+  </PropertyGroup>
+  <Import Project="$(CustomProjectExtensionsPath)CustomProject.props" />
+  <PropertyGroup>
+    <SchemaVersion>2.0</SchemaVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="Binding.xml" />
+    <Content Include="BizTalkServerInventory.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\appProjectHelloWorld2\appProjectHelloWorld2.btproj" />
+  </ItemGroup>
+  <Import Project="$(CustomProjectExtensionsPath)CustomProject.targets" />
+  <!-- This next bit is required unless the macro used to Import your targets is defined in an MSBuild toolset. -->
+  <ProjectExtensions>
+    <ProjectCapabilities>
+      <ProjectConfigurationsDeclaredAsItems />
+    </ProjectCapabilities>
+  </ProjectExtensions>
+</Project>

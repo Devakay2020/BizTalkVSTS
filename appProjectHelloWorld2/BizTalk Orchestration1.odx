@@ -1,0 +1,203 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="cd203111-a6a0-4db3-a89e-32df9bd92fc2" LowerBound="1.1" HigherBound="44.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="appProjectHelloWorld2" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="PortType" OID="0b119cb2-6bdc-457e-a2d4-061079d08de7" ParentLink="Module_PortType" LowerBound="4.1" HigherBound="11.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PortType_1" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="0f1fb27d-7b18-4a2d-be87-d3afd24fcb80" ParentLink="PortType_OperationDeclaration" LowerBound="6.1" HigherBound="10.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="64837ce5-7125-4f02-8b8e-e077944b0963" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="8.13" HigherBound="8.27">
+                    <om:Property Name="Ref" Value="appProjectHelloWorld2.FlatFileSchema" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="d7d07a44-7171-4cd5-9045-96aed5829336" ParentLink="Module_PortType" LowerBound="11.1" HigherBound="18.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PortType_2" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="f1ae2f7c-c111-43e9-8b35-48f04318fd03" ParentLink="PortType_OperationDeclaration" LowerBound="13.1" HigherBound="17.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="7bb12dcf-1fa7-4ecc-9130-f8554a9b9d58" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="15.13" HigherBound="15.22">
+                    <om:Property Name="Ref" Value="appProjectHelloWorld2.SchemaOut" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="ServiceDeclaration" OID="9ea22221-7168-4798-91ee-a7b02c52d2ed" ParentLink="Module_ServiceDeclaration" LowerBound="18.1" HigherBound="43.1">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="BizTalk_Orchestration1" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="MessageDeclaration" OID="adb33cc9-c561-4bdf-969a-709353ac4d67" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="25.1" HigherBound="26.1">
+                <om:Property Name="Type" Value="appProjectHelloWorld2.SchemaOut" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Message_1" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="c345356a-2f14-48fa-b615-20300db86f6d" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="26.1" HigherBound="27.1">
+                <om:Property Name="Type" Value="appProjectHelloWorld2.FlatFileSchema" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Message_3" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+            <om:Element Type="ServiceBody" OID="0fca3ba8-f898-407d-8fc8-0ca370491a49" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="Receive" OID="53b1da88-c571-41cf-a9d7-7840120b5922" ParentLink="ServiceBody_Statement" LowerBound="29.1" HigherBound="31.1">
+                    <om:Property Name="Activate" Value="True" />
+                    <om:Property Name="PortName" Value="Inport" />
+                    <om:Property Name="MessageName" Value="Message_3" />
+                    <om:Property Name="OperationName" Value="Operation_1" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Receive_1" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Delay" OID="ea729db8-135b-4b3e-8cc7-708965f416be" ParentLink="ServiceBody_Statement" LowerBound="31.1" HigherBound="33.1">
+                    <om:Property Name="Timeout" Value="new System.TimeSpan(1,0,0);" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Delay_1" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Construct" OID="aa9d0a91-f1d9-49d6-8f0e-b7bd1d0773a2" ParentLink="ServiceBody_Statement" LowerBound="33.1" HigherBound="39.1">
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="ConstructMessage_1" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="Transform" OID="27db90a2-6afd-4f39-a362-f47025d0cc7e" ParentLink="ComplexStatement_Statement" LowerBound="36.1" HigherBound="38.1">
+                        <om:Property Name="ClassName" Value="appProjectHelloWorld2.Map1" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Transform_1" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="MessagePartRef" OID="c2518bce-ccd0-4d4b-bf3f-e7f913771364" ParentLink="Transform_InputMessagePartRef" LowerBound="37.69" HigherBound="37.78">
+                            <om:Property Name="MessageRef" Value="Message_3" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="MessagePartReference_1" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                        <om:Element Type="MessagePartRef" OID="e451e071-e255-49fa-add2-f6e4293021ea" ParentLink="Transform_OutputMessagePartRef" LowerBound="37.28" HigherBound="37.37">
+                            <om:Property Name="MessageRef" Value="Message_1" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="MessagePartReference_2" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="MessageRef" OID="5bac6e3c-b2bc-41c9-868f-bc6b6d72a6e8" ParentLink="Construct_MessageRef" LowerBound="34.23" HigherBound="34.32">
+                        <om:Property Name="Ref" Value="Message_1" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                </om:Element>
+                <om:Element Type="Send" OID="7e002040-a36e-4e97-8c96-0c3ce300b700" ParentLink="ServiceBody_Statement" LowerBound="39.1" HigherBound="41.1">
+                    <om:Property Name="PortName" Value="SendPort" />
+                    <om:Property Name="MessageName" Value="Message_1" />
+                    <om:Property Name="OperationName" Value="Operation_1" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Send_1" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="557af949-9856-443e-83c2-96162a6be6bc" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="21.1" HigherBound="23.1">
+                <om:Property Name="PortModifier" Value="Implements" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="appProjectHelloWorld2.PortType_1" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Inport" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="0687c4c7-2420-4ed5-913b-c23a896687b1" ParentLink="PortDeclaration_CLRAttribute" LowerBound="21.1" HigherBound="22.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="36184b12-b9f8-42af-a559-8b6d9cec23b2" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="23.1" HigherBound="25.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="appProjectHelloWorld2.PortType_2" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SendPort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="11bcda37-a160-46db-a160-bbac1b7c8980" ParentLink="PortDeclaration_CLRAttribute" LowerBound="23.1" HigherBound="24.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module appProjectHelloWorld2
+{
+    internal porttype PortType_1
+    {
+        oneway Operation_1
+        {
+            FlatFileSchema
+        };
+    };
+    internal porttype PortType_2
+    {
+        oneway Operation_1
+        {
+            SchemaOut
+        };
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service BizTalk_Orchestration1
+    {
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port implements PortType_1 Inport;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses PortType_2 SendPort;
+        message SchemaOut Message_1;
+        message FlatFileSchema Message_3;
+        body ()
+        {
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("53b1da88-c571-41cf-a9d7-7840120b5922")]
+            activate receive (Inport.Operation_1, Message_3);
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("ea729db8-135b-4b3e-8cc7-708965f416be")]
+            delay new System.TimeSpan(1,0,0);
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("aa9d0a91-f1d9-49d6-8f0e-b7bd1d0773a2")]
+            construct Message_1
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("27db90a2-6afd-4f39-a362-f47025d0cc7e")]
+                transform (Message_1) = appProjectHelloWorld2.Map1 (Message_3);
+            }
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("7e002040-a36e-4e97-8c96-0c3ce300b700")]
+            send (SendPort.Operation_1, Message_1);
+        }
+    }
+}
+

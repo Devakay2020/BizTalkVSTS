@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "appProjectHelloWorld2", "appProjectHelloWorld2\appProjectHelloWorld2.btproj", "{F70E43D8-94BF-4673-84DA-43998A300C3C}"
+EndProject
+Project("{8727FEA9-91DB-4FB1-952D-E73D021F4F57}") = "appProjectHelloWorld-Build", "appProjectHelloWorld-Build\appProjectHelloWorld-Build.btaproj", "{8409A366-E222-4DA8-840F-2D08ED9A0F43}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F70E43D8-94BF-4673-84DA-43998A300C3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F70E43D8-94BF-4673-84DA-43998A300C3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F70E43D8-94BF-4673-84DA-43998A300C3C}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{F70E43D8-94BF-4673-84DA-43998A300C3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F70E43D8-94BF-4673-84DA-43998A300C3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F70E43D8-94BF-4673-84DA-43998A300C3C}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{8409A366-E222-4DA8-840F-2D08ED9A0F43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8409A366-E222-4DA8-840F-2D08ED9A0F43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8409A366-E222-4DA8-840F-2D08ED9A0F43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8409A366-E222-4DA8-840F-2D08ED9A0F43}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5C81046B-E03D-46EC-8570-021DCFAE99BE}
+	EndGlobalSection
+EndGlobal
